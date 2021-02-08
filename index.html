@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creator</title>
+
+  <link rel="stylesheet" href="css/vars.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/153062db69.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <button type="button" class="btn nav__btn--dimensions">
+      <object type="image/svg+xml" data="svg/caret-square-down-solid.svg" class="icon-dropdown"></object>
+      <div>Dimensions: <span>80x40</span>cm</div> 
+    </button>
+
+    <div class="zoom">
+      <div>
+      </div>
+      <div class="zoom__slider">
+        <label for="zoom__input" class="zoom__label">
+          <object type="image/svg+xml" data="svg/search-plus-solid.svg">
+          </object>
+          Zoom <span class="zoom__value">100</span>%
+        </label>
+          <input type="range" 
+          id="zoom__input" 
+          class="zoom__input"
+          name="zoom__input" 
+          min="0.5" 
+          max="1.5" 
+          step="0.1" 
+          value="1">
+      </div>
+      <button class="btn zoom__btn--reset">100%</button>
+    </div>
+    
+      <a class="btn nav__link--download">
+        <object type="image/svg+xml" data="svg/file-download-solid.svg"></object>
+          Download
+        </a>
+      </div>
+  </nav>
+
+  <section class="dimensions__wrapper">
+    <h2>Predefined</h2>
+    <button class="btn dimensions__button-80-40">80x40cm</button>
+    <button class="btn dimensions__button-80-60">80x60cm</button>
+    <form class="dimensions__form">
+      <h2>Custom</h2>
+
+      <label for="columns">Columns</label>
+      <input type="number" name="columns" class="dimensions__form_columns" min="1" value="20" id="columns">
+
+      
+      <label for="rows">Rows</label>
+      <input type="number" name="rows" class="dimensions__form_rows" min="1" value="10" id="rows">
+
+      <p>Width: <span class="dimensions__info--width"></span> cm</p>
+
+
+      <p>Height: <span class="dimensions__info--height"></span> cm</p>
+      <button type="submit" class="btn">Select</button>
+    </form>
+  </section>
+
+  <main>
+    
+    <div class="painting-wrapper">
+      <section class="painting">
+      </section>
+    </div>
+
+    <section class="tools">
+
+      <button class="btn tools__btn--eraser">
+        <object type="image/svg+xml" data="svg/eraser-solid.svg"></object>
+        Eraser
+      </button>
+      <button class="btn tools__btn--clear">
+        <object type="image/svg+xml" data="svg/trash-alt-regular.svg"></object>
+        Clear
+      </button>
+
+
+      <div class="tools__color_wrapper">
+        <p>Selected color:</p>
+        <div class="current-color"></div>
+      </div>
+    </section>
+    
+    <section class="colors">
+      <button type="button" class="color" data-code="1"></button>
+      <button type="button" class="color" data-code="2"></button>
+      <button type="button" class="color" data-code="3"></button>
+      <button type="button" class="color" data-code="4"></button>
+      <button type="button" class="color" data-code="5"></button>
+      <button type="button" class="color" data-code="6"></button>
+      <button type="button" class="color" data-code="7"></button>
+      <button type="button" class="color" data-code="8"></button>
+      <button type="button" class="color" data-code="9"></button>
+      <button type="button" class="color" data-code="10"></button>
+      <button type="button" class="color" data-code="11"></button>
+      <button type="button" class="color" data-code="12"></button>
+      <button type="button" class="color" data-code="13"></button>
+      <button type="button" class="color" data-code="14"></button>
+      <button type="button" class="color" data-code="15"></button>
+      <button type="button" class="color" data-code="16"></button>
+      <button type="button" class="color" data-code="17"></button>
+      <button type="button" class="color" data-code="18"></button>
+      <button type="button" class="color" data-code="19"></button>
+      <button type="button" class="color" data-code="20"></button>
+      <button type="button" class="color" data-code="21"></button>
+      <button type="button" class="color" data-code="22"></button>
+      <button type="button" class="color" data-code="23"></button>
+      <button type="button" class="color" data-code="24"></button>
+      <button type="button" class="color" data-code="25"></button>
+      <button type="button" class="color" data-code="26"></button>
+      <button type="button" class="color" data-code="27"></button>
+      <button type="button" class="color" data-code="28"></button>
+      <button type="button" class="color" data-code="29"></button>
+      <button type="button" class="color" data-code="30"></button>
+      <button type="button" class="color" data-code="31"></button>
+      <button type="button" class="color" data-code="32"></button>
+      <button type="button" class="color" data-code="33"></button>
+      <button type="button" class="color" data-code="34"></button>
+      <button type="button" class="color" data-code="35"></button>
+      <button type="button" class="color" data-code="36"></button>
+      <button type="button" class="color" data-code="37"></button>
+      <button type="button" class="color" data-code="38"></button>
+      <button type="button" class="color" data-code="39"></button>
+      <button type="button" class="color" data-code="40"></button>
+      <button type="button" class="color" data-code="41"></button>
+      <button type="button" class="color" data-code="42"></button>
+      <button type="button" class="color" data-code="43"></button>
+      <button type="button" class="color" data-code="44"></button>
+      <button type="button" class="color" data-code="45"></button>
+      <button type="button" class="color" data-code="46"></button>
+      <button type="button" class="color" data-code="47"></button>
+      <button type="button" class="color" data-code="48"></button>
+      <button type="button" class="color" data-code="49"></button>
+      <button type="button" class="color" data-code="50"></button>
+      <button type="button" class="color" data-code="51"></button>
+      <button type="button" class="color" data-code="52"></button>
+      <button type="button" class="color" data-code="53"></button>
+      <button type="button" class="color" data-code="54"></button>
+      <button type="button" class="color" data-code="55"></button>
+      <button type="button" class="color" data-code="56"></button>
+      <button type="button" class="color" data-code="57"></button>
+      <button type="button" class="color" data-code="58"></button>
+      <button type="button" class="color" data-code="59"></button>
+      <button type="button" class="color" data-code="60"></button>
+      <button type="button" class="color" data-code="61"></button>
+      <button type="button" class="color" data-code="62"></button>
+      <button type="button" class="color" data-code="63"></button>
+      <button type="button" class="color" data-code="64"></button>
+      <button type="button" class="color" data-code="65"></button>
+      <button type="button" class="color" data-code="66"></button>
+      <button type="button" class="color" data-code="67"></button>
+      <button type="button" class="color" data-code="68"></button>
+      <button type="button" class="color" data-code="69"></button>
+      <button type="button" class="color" data-code="70"></button>
+      <button type="button" class="color" data-code="71"></button>
+      <button type="button" class="color" data-code="72"></button>
+      <button type="button" class="color" data-code="73"></button>
+      <button type="button" class="color" data-code="74"></button>
+      <button type="button" class="color" data-code="75"></button>
+      <button type="button" class="color" data-code="76"></button>
+      <button type="button" class="color" data-code="77"></button>
+      <button type="button" class="color" data-code="78"></button>
+      <button type="button" class="color" data-code="79"></button>
+      <button type="button" class="color" data-code="80"></button>
+      <button type="button" class="color" data-code="81"></button>
+      <button type="button" class="color" data-code="82"></button>
+      <button type="button" class="color" data-code="83"></button>
+      <button type="button" class="color" data-code="84"></button>
+      <button type="button" class="color" data-code="85"></button>
+      <button type="button" class="color" data-code="86"></button>
+      <button type="button" class="color" data-code="87"></button>
+      <button type="button" class="color" data-code="88"></button>
+      <button type="button" class="color" data-code="89"></button>
+      <button type="button" class="color" data-code="90"></button>
+      <button type="button" class="color" data-code="91"></button>
+      <button type="button" class="color" data-code="92"></button>
+      <button type="button" class="color" data-code="93"></button>
+      <button type="button" class="color" data-code="94"></button>
+      <button type="button" class="color" data-code="95"></button>
+      <button type="button" class="color" data-code="96"></button>
+      <button type="button" class="color" data-code="97"></button>
+      <button type="button" class="color" data-code="98"></button>
+      <button type="button" class="color" data-code="99"></button>
+      <button type="button" class="color" data-code="100"></button>
+      <button type="button" class="color" data-code="101"></button>
+      <button type="button" class="color" data-code="102"></button>
+      <button type="button" class="color" data-code="103"></button>
+      <button type="button" class="color" data-code="104"></button>
+      <button type="button" class="color" data-code="105"></button>
+      <button type="button" class="color" data-code="106"></button>
+      <button type="button" class="color" data-code="107"></button>
+      <button type="button" class="color" data-code="108"></button>
+      <button type="button" class="color" data-code="109"></button>
+      <button type="button" class="color" data-code="110"></button>
+      <button type="button" class="color" data-code="111"></button>
+      <button type="button" class="color" data-code="112"></button>
+      <button type="button" class="color" data-code="113"></button>
+      <button type="button" class="color" data-code="114"></button>
+      <button type="button" class="color" data-code="115"></button>
+      <button type="button" class="color" data-code="116"></button>
+      <button type="button" class="color" data-code="117"></button>
+      <button type="button" class="color" data-code="118"></button>
+      <button type="button" class="color" data-code="119"></button>
+      <button type="button" class="color" data-code="120"></button>
+      <button type="button" class="color" data-code="121"></button>
+      <button type="button" class="color" data-code="122"></button>
+      <button type="button" class="color" data-code="123"></button>
+      <button type="button" class="color" data-code="124"></button>
+      <button type="button" class="color" data-code="125"></button>
+      <button type="button" class="color" data-code="126"></button>
+      <button type="button" class="color" data-code="127"></button>
+      <button type="button" class="color" data-code="128"></button>
+      <button type="button" class="color" data-code="129"></button>
+      <button type="button" class="color" data-code="130"></button>
+      <button type="button" class="color" data-code="131"></button>
+      <button type="button" class="color" data-code="132"></button>
+      <button type="button" class="color" data-code="133"></button>
+      <button type="button" class="color" data-code="134"></button>
+      <button type="button" class="color" data-code="135"></button>
+      <button type="button" class="color" data-code="136"></button>
+      <button type="button" class="color" data-code="137"></button>
+      <button type="button" class="color" data-code="138"></button>
+      <button type="button" class="color" data-code="139"></button>
+      <button type="button" class="color" data-code="140"></button>
+      <button type="button" class="color" data-code="141"></button>
+      <button type="button" class="color" data-code="142"></button>
+      <button type="button" class="color" data-code="143"></button>
+      <button type="button" class="color" data-code="144"></button>
+      <button type="button" class="color" data-code="145"></button>
+      <button type="button" class="color" data-code="146"></button>
+      <button type="button" class="color" data-code="147"></button>
+      <button type="button" class="color" data-code="148"></button>
+      <button type="button" class="color" data-code="149"></button>
+      <button type="button" class="color" data-code="150"></button>
+      <button type="button" class="color" data-code="151"></button>
+      <button type="button" class="color" data-code="152"></button>
+      <button type="button" class="color" data-code="153"></button>
+      <button type="button" class="color" data-code="154"></button>
+      <button type="button" class="color" data-code="155"></button>
+      <button type="button" class="color" data-code="156"></button>
+      <button type="button" class="color" data-code="157"></button>
+      <button type="button" class="color" data-code="158"></button>
+      <button type="button" class="color" data-code="159"></button>
+      <button type="button" class="color" data-code="160"></button>
+      <button type="button" class="color" data-code="161"></button>
+      <button type="button" class="color" data-code="162"></button>
+      <button type="button" class="color" data-code="163"></button>
+      <button type="button" class="color" data-code="164"></button>
+      <button type="button" class="color" data-code="165"></button>
+      <button type="button" class="color" data-code="166"></button>
+      <button type="button" class="color" data-code="167"></button>
+      <button type="button" class="color" data-code="168"></button>
+      <button type="button" class="color" data-code="169"></button>
+      <button type="button" class="color" data-code="170"></button>
+      <button type="button" class="color" data-code="171"></button>
+      <button type="button" class="color" data-code="172"></button>
+      <button type="button" class="color" data-code="173"></button>
+      <button type="button" class="color" data-code="174"></button>
+      <button type="button" class="color" data-code="175"></button>
+      <button type="button" class="color" data-code="176"></button>
+      <button type="button" class="color" data-code="177"></button>
+      <button type="button" class="color" data-code="178"></button>
+      <button type="button" class="color" data-code="179"></button>
+      <button type="button" class="color" data-code="180"></button>
+      <button type="button" class="color" data-code="181"></button>
+      <button type="button" class="color" data-code="182"></button>
+      <button type="button" class="color" data-code="183"></button>
+      <button type="button" class="color" data-code="184"></button>
+      <button type="button" class="color" data-code="185"></button>
+      <button type="button" class="color" data-code="186"></button>
+      <button type="button" class="color" data-code="187"></button>
+      <button type="button" class="color" data-code="188"></button>
+      <button type="button" class="color" data-code="189"></button>
+      <button type="button" class="color" data-code="190"></button>
+      <button type="button" class="color" data-code="191"></button>
+    </section>
+
+    <canvas></canvas>
+    
+
+  </main>
+  
+  <footer>
+    <p>&copy; - 2020-2021 - Forest Dimensions</p>
+    <p>Icons from <a href="https://fontawesome.com/license">Font Awsome</p>
+    <p>Background pattern from <a href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a>
+    </p>
+  </footer>
+  
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

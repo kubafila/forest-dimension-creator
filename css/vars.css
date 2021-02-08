@@ -1,0 +1,10 @@
+:root{
+  --colors-gap:20px;
+  --color-size-width:calc((  (89vw + var(--colors-gap)) / 24) - var(--colors-gap));
+  --color-size-height:var(--color-size-width);
+  --box-size:4.5vmin;
+
+  --columns:20;
+  --rows:10;
+  --painting-scale:1;
+}
