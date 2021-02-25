@@ -22,3 +22,6 @@ To run this project, install it locally using npm:
 $ npm install
 $ npm run build
 ```
+
+## Live
+Ypu se see it live at [kubafila.github.io/forest-dimension-creator](https://kubafila.github.io/forest-dimension-creator/)
