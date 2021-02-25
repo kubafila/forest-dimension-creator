@@ -5,6 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Live](#live)
 
 ## General info
 Creator for company Forest Dimension. It is used for design wooden paintings.
@@ -24,4 +25,4 @@ $ npm run build
 ```
 
 ## Live
-Ypu se see it live at [kubafila.github.io/forest-dimension-creator](https://kubafila.github.io/forest-dimension-creator/)
+You can see it live at [kubafila.github.io/forest-dimension-creator](https://kubafila.github.io/forest-dimension-creator/).
